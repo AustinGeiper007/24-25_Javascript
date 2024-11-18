@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro</title>
+</head>
+<body>
+
+<p id="demo">Some content or something? Idk, need to display something</p>
+
+<button id="cool" onclick="myFirstFunction()" onmouseover="mySecondFunction()">
+  Click Me to Change the Text Above =)
+</button>
+
+
+
+
+
+
+<script>
+  // Single line comment
+  /*
+  * This is a multi-line comment
+  * This is the annoying one.
+  * This is why pop-up blockers block JS
+  * It's the code for a pop-up
+  */
+  //alert("Annoying you, aren't I? This is a pop-up. We don't like pop-ups");
+
+  function myFirstFunction(){
+    document.getElementById('demo').innerHTML = "You clicked it didn't you, and you killed the button, you monster!!!";
+    document.getElementById('demo').style.color = "red";
+    document.getElementById('cool').style.display = "none";
+  }
+  function mySecondFunction(){
+    document.getElementById('demo').innerHTML = "Could you stop hovering and click it already?"
+    document.getElementById('demo').style.fontSize = "35px"
+  }
+</script>
+
+
+</body>
+</html>
