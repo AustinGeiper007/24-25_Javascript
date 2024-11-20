@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 1</title>
+</head>
+<body>
+<!-- Create a div tag with some text and an id named "goodbye".
+     Create a button that, when clicked, makes the text disappear -->
+<div class="container" id="goodbye">
+    This is some text. This text will disappear if you press the button below. This will send this paragraph to the void, never to be seen again.
+</div>
+<br />
+<br />
+<button id="disappearIDgoodbye" onclick="disappearFunction()" onmouseover="plead()" onmouseleave="thank()">
+    Click to get rid of text
+</button>
+
+<script>
+    function disappearFunction(){
+        document.getElementById('goodbye').style.display = "none";
+    }
+    function plead(){
+        document.getElementById('goodbye').innerHTML = "NO NO NO! PLEASE DON'T CLICK THAT BUTTON!"
+    }
+    function thank(){
+        document.getElementById('goodbye').innerHTML = "Thank you for sparing me!"
+    }
+</script>
+
+
+</body>
+</html>
