@@ -11,12 +11,15 @@
     This is some text. This text will disappear if you press the button below. This will send this paragraph to the void, never to be seen again.
 </div>
 <br />
-<button id="disappearIDgoodbye" onclick="disappearFunction()" onmouseover="plead()" onmouseleave="thank()">
+<button id="disappearIDgoodbye" onclick="disappearText()" onmouseover="plead()" onmouseleave="thank()">
     Click to get rid of text
+</button>
+<button id="showIDgoodbye" onclick="reappearText()">
+    Click to show text
 </button>
 
 <script>
-    function disappearFunction(){
+    function disappearText(){
         document.getElementById('goodbye').style.display = "none";
     }
     function plead(){
@@ -25,6 +28,9 @@
     function thank(){
         document.getElementById('goodbye').innerHTML = "Thank you for sparing me!"
     }
+    function reappearText(){
+        document.getElementById('goodbye').style.display = 'block'
+       }
 </script>
 
 
