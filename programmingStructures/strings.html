@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Manipulation</title>
+</head>
+<body>
+
+<script>
+  someString = "A bunch of characters and stuff lol";
+  // Yippee! You made a string!
+
+  let length = someString.length;
+  //someString.length gets the length of the given string
+  // When using this, add minus one to get the index to line up correctly
+
+  let thirdLetter = someString.charAt(3)
+  // You could also use someString[3] to accomplish the same thing
+
+  // Substrings are when you take a string and break it apart
+  // This uses the substring method (shocker...)
+  let substringWordBunch = someString.substring(2, 6)
+  // Beginning is inclusive
+  // Ending is exclusive
+  // Funky, I know (I don't really like it)
+
+
+  //Reverse my string
+  let someStringReversed = "";
+  for(let index = length - 1; index >= 0; index--){
+    someStringReversed += someString.charAt(index);
+  }
+  alert(someStringReversed);
+
+</script>
+
+</body>
+</html>
