@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS CheatSheet Experimentation</title>
+</head>
+<body>
+<!-- November 26:  Take a look at the interactive Javascript Cheat Sheet.
+Find 5 effects that we haven't used in class and implement them on a webpage
+(in their most basic form).  Post the github link to the webpage you
+created as a comment on Schoology.  This is a homework assignment.
+See you tomorrow! -->
+
+
+<p>This is a Web Design assignment for November 26th, 2024</p>
+<h1>Get date function</h1>
+<button type="button" onclick="getAndAlertDate()" onmouseover="hesitation()">Click to alert the current date</button>
+
+
+<script>
+  function getAndAlertDate() {
+    const weekdayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const monthsList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const date = new Date();
+    let weekday = weekdayList[date.getDay()];
+    month = monthsList[date.getMonth()];
+    year = date.getFullYear();
+    dayNumber = date.getDate();
+
+    if (dayNumber == (1 || 21 || 31)) {
+      day += "st"
+    } else if (dayNumber == (2 || 22)){
+      dayNumber += "nd"
+    } else if (dayNumber == (3 || 23)){
+      dayNumber += "rd"
+    } else {
+      dayNumber += "th"
+    }
+
+    let dateWordForm = weekday + ", " + month + " " + dayNumber + " " + year;
+    alert("Today is " + dateWordForm);
+  }
+
+</script>
+
+</body>
+</html>
