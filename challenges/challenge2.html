@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Challenge 2</title>
+  <meta charset="UTF-8">
+  <title>Challenge 2</title>
 </head>
 <body>
 <!-- Add a button that when you click it, the background of the table changes to blue -->
 
-<table id="table1">
+<table id="table">
   <tr>
     <th>Company</th>
     <th>Contact</th>
@@ -45,20 +45,13 @@
   </tr>
 </table>
 
-<br />
-<br />
-
-<button type="button" onclick="backgroundColorChangeBlue()">Click to change bg-color to blue</button>
-<button type="button" onclick="backgroundColorChangeWhite()">Click to change bg-color to white</button>
+<button type="button" onclick="backgroundChange()">Click Me</button>
 
 <script>
-  function backgroundColorChangeBlue(){
-    document.getElementById('table1').style.backgroundColor = "#00aaff";
+  function backgroundChange(){
+    document.getElementById("table").style.backgroundColor = "blue";
   }
 
-  function backgroundColorChangeWhite(){
-    document.getElementById('table1').style.backgroundColor = "white";
-  }
 </script>
 
 </body>
