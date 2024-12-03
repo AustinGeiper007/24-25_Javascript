@@ -6,48 +6,38 @@
 </head>
 <body>
 
-<p>Input values to add</p>
-
 <form>
     First Name:
-    <input type="text" id="value1" />
-    <br />
+    <input type="text" id="value1" /><br />
     Last Name:
-    <input type="text" id="value2" />
-    <br /><br />
-    Press to check if boxes are empty
-    <br />
+    <input type="text" id="value2" /><br />
     <button type="button" onclick="check()">Check</button>
 </form>
 
 <script>
-  function addValues(){
-      // The Number function turns it from a string to a value
-      // Without it, the addition part would do string addition
-    let value1 = Number(document.getElementById('value1').value);
-    let value2 = Number(document.getElementById('value2').value);
-    let output = value1 + value2
-    alert("Your total is: " + output)
-  }
+    function add(){
+        let value1 = Number(document.getElementById("value1").value);
+        let value2 = Number(document.getElementById("value2").value);
 
-  function check(){
-      let value1 = document.getElementById('value1').value;
-      let value2 = document.getElementById('value2').value;
+        alert("Your total is: " + (value1 + value2));
+    }
 
-      if (value1 == ""){
-          document.getElementById("value1").style.backgroundColor = "red"
-      }
-      if (value2 == ""){
-          document.getElementById("value2").style.backgroundColor = "red"
-      }
-      if (value1 != ""){
-          document.getElementById("value1").style.backgroundColor = "white"
-      }
-      if (value2 != ""){
-          document.getElementById("value2").style.backgroundColor = "white"
-      }
-  }
+    function check(){
+        let value1 = document.getElementById("value1").value;
+        let value2 = document.getElementById("value2").value;
+
+        if(value1 == ""){
+            document.getElementById("value1").style.backgroundColor = "red";
+        }
+
+        if(value2 == ""){
+            document.getElementById("value2").style.backgroundColor = "red";
+        }
+    }
+
+
 </script>
+
 
 </body>
 </html>
