@@ -45,11 +45,11 @@
   </tr>
 </table>
 
-<button type="button" onclick="backgroundChange()">Click Me</button>
+<button type="button" onclick="backgroundChangeToggle()">Click Me</button>
 
 <script>
   counter = 0;
-  function backgroundChange(){
+  function backgroundChangeToggle(){
     if (counter % 2 === 0){
       document.getElementById("table").style.backgroundColor = "cyan";
     }else{
