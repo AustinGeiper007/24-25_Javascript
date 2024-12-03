@@ -49,11 +49,13 @@
 
 <script>
   counter = 0;
+  table = document.getElementById("table")
+
   function backgroundChangeToggle(){
     if (counter % 2 === 0){
-      document.getElementById("table").style.backgroundColor = "cyan";
+      table.style.backgroundColor = "cyan";
     }else{
-      document.getElementById("table").style.backgroundColor = "white";
+      table.style.backgroundColor = "white";
     }
     counter++
   }
