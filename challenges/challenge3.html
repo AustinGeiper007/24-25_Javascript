@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Shy image</title>
+    <style>
+        #green{
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
 <h1>Hover over to vanish image</h1>
-<img src="../img/DarkGreen.avif" id="blue" onmouseover="vanish()">
+<img src="../img/DarkGreen.avif" id="green" alt="DarkGreen" onmouseover="vanish()">
 
 <script>
     function vanish(){
-        document.getElementById("blue").style.display = "none";
+        document.getElementById("green").style.display = "none";
     }
 </script>
 
